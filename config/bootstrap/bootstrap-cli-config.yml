@@ -1,9 +1,8 @@
 ---
 # Warning: This is just an example to guide youself, do not copy and paste the entire code since format/identation is not correct
 bootstrap:
-
     features:
-        with-special-groups: false
+        with-datamodel-capability: false
         with-raw-capability: true
         aggregated-level-name: all
         group-prefix: cdf
@@ -26,7 +25,6 @@ bootstrap:
                   - cdf-group: cdf:all:read
                     idp-source-id: eb7011e8-b73a-46bb-9abd-efe7b28432ab # for the AAD Group to be matched to cdf-group
                     idp-source-name: bootcamp-44-test-all-read # i.e. bootcamp-01-test-all-read
-
             - cdf-project: cdf-bootcamp-44-prod # i.e. bootcamp-01-test
               mappings:
                   - cdf-group: cdf:root
