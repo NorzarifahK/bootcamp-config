@@ -4,7 +4,7 @@ name: deploy-bootstrap-cli
 on:
     push:
         branches:
-            - main
+            - None
         paths:
             - config/bootstrap/**
             - .github/workflows/deploy-bootstrap-cli.yaml
