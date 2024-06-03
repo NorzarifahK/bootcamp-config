@@ -67,6 +67,7 @@ bootstrap:
               - cdf-group: cdf:all:read
                 idp-source-id: eb7011e8-b73a-46bb-9abd-efe7b28432ab # for the AAD Group to be matched to cdf-group
                 idp-source-name: bootcamp-44-test-all-read # i.e. bootcamp-01-test-all-read
+
         - cdf-project: cdf-bootcamp-44-prod  # i.e. bootcamp-01-test
           mappings:
               - cdf-group: cdf:root
@@ -101,6 +102,8 @@ bootstrap:
                     read:
                         - node-name: src:001:sap
                         - node-name: src:002:opcua
+
+
 cognite:
     host: ${BOOTSTRAP_CDF_HOST}
     project: ${BOOTSTRAP_CDF_PROJECT}
